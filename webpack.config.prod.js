@@ -31,6 +31,9 @@ module.exports = webpackMerge.smart(commonConfig, {
         new webpack.NoErrorsPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             sourceMap: false
+        }),
+        new webpack.DefinePlugin({
+            URL: JSON.stringify("https://social-network-lj.herokuapp.com/")
         })
     ]
 });

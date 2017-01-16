@@ -9,9 +9,15 @@ var mongoose = require('mongoose');
 var appRoutes = require('./routes/app');
 var messageRoutes = require('./routes/messages');
 var userRoutes = require('./routes/user');
+var Config = require('./config');
 
 var app = express();
-mongoose.connect('localhost:27017/node-angular');
+var conf = new Config();
+var connection = conf.database;
+
+//console.log(conf);
+console.log(connection);
+mongoose.connect(connection);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
