@@ -7,3 +7,4 @@ gen
 /start-production-setup.cmd
 /npm-debug.log
 /how-to-use.txt
+/public/
