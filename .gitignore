@@ -6,3 +6,4 @@ gen
 /node_modules/
 /start-production-setup.cmd
 /npm-debug.log
+/how-to-use.txt
